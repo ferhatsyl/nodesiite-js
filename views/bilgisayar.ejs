@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Atom Bilgisayar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="w3-content" style="max-width:1100px;background-image: url(/img/foto1.jpg);">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-red w3-collapse w3-top" style="z-index:3;width:250px;background-image: url(/img/spc.jpg);" id="mySidebar">
+  <div class="w3-container w3-display-container w3-padding-70">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><b><img src="/img/atm1.png" width="200px" ></b></h3>
+  </div>
+  <div class="w3-padding-40 w3-medium w3-text-white" style="font-weight:bold">
+<a href="telefon" class="w3-bar-item w3-button w3"><i class="fa fa-caret-right w3-margin-right"></i>Ｔｅｌｅｆｏｎ</a>
+<a href="bilgisayar" class="w3-bar-item w3-button w3"><i class="fa fa-caret-right w3-margin-right"></i>Ｂｉｌｇｉｓａｙａｒ</a>
+<a href="aksesuar" class="w3-bar-item w3-button w3"><i class="fa fa-caret-right w3-margin-right"></i>Ａｋｓｅｓｕａｒ</a>
+  </div>
+  </nav>
+  <div class="w3-bar w3-theme-d2 w3-left-align w3-large w3-dark-gray" style="background-image:url(/img/spc.jpg) " >
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-theme-d4"><i class="fa fa-home w3-margin-right"></i>Logo</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="News"><i class="fa fa-globe"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" title="Account Settings"><i class="fa fa-user"></i></a>
+    <a href="" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-button w3-transparent" title="Messages"><i class="fa fa-envelope"></i></a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <a class="w3-button w3-padding-large" title="Notifications"><i class="fa fa-bell"></i><span class="w3-badge w3-right w3-small w3-green">3</span></a> 
+      <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+      <a href="#" class="w3-bar-item w3-button">Ürünlerimizde %50'ye Varan İndirimler</a>
+      <a href="#" class="w3-bar-item w3-button">Sana Özel Fırsatları Kaçırma</a>
+      <a href="#" class="w3-bar-item w3-button">Atom Bilgisayar'da Dev Kampanya</a>
+      </div>
+    </div>
+    <a href="/customers/add" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-button w3-transparent" title="Shopping"><i class="fa fa-users"></i></a>
+    <a href="sepet" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-button w3-transparent" title="Shopping"><i class="fa fa-shopping-cart"></i></a>
+    <a href="admin" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-button w3-transparent" title="Shopping"><i class="fa fa-user"></i></a>
+    <a href="index" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-white w3-transparent" title="My Account">
+      <img src="/img/atm.png" class="w3-circle" style="height:40px;width:40px" alt="Avatar">
+    </a>
+   </div>
+   
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left">ＢＩＬＧＩＳＡＹＡＲ</p>
+    <p class="w3-right">
+        
+    </p>
+  </header>
+
+  
+
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 Adet</p>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="/img/a-pc.png" alt="Sandwich" style="width:100%">
+      <h3>Asus X415EA-RT45</h3>
+      <a href="sepet"><button class="w3-button w3-black">10.700₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc2" class="w3-button w3-black">İncele</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="/img/l-pc.png" alt="Steak" style="width:100%">
+      <h3>Lenovo ThinkPad</h3>
+      <a href="sepet"><button class="w3-button w3-black">17.200₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc3" class="w3-button w3-black">İncele</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="/img/a-pc-2.png" alt="Cherries" style="width:100%">
+      <h3>Asus VivoBook Pro</h3>
+      <a href="sepet"><button class="w3-button w3-black">15.999₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc4" class="w3-button w3-black">İncele</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="/img/l-pc-2.png" alt="Pasta and Wine" style="width:100%">
+      <h3>Lenovo ThinkPad</h3>
+      <a href="sepet"><button class="w3-button w3-black">13.800₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc5" class="w3-button w3-black">İncele</a>
+    </div>
+  </div>
+
+<!-- Second Photo Grid-->
+<div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="/img/mac-1.png" alt="Popsicle" style="width:100%">
+      <h3>Apple MacBook Pro M1 </h3>
+      <a href="sepet"><button class="w3-button w3-black">47.999₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc1" class="w3-button w3-black">İncele</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="/img/mac-2.png" alt="Salmon" style="width:100%">
+      <h3>Apple MacBook Air M2</h3>
+      <a href="sepet"><button class="w3-button w3-black">32.299₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc6" class="w3-button w3-black">İncele</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="/img/a-pc-3.png" alt="Sandwich" style="width:100%">
+      <h3>Asus X571GTA12-HN</h3>
+      <a href="sepet"><button class="w3-button w3-black">20.073₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc7" class="w3-button w3-black">İncele</a>
+    </div>
+    <div class="w3-quarter">
+      <img src="/img/m-pc.png" alt="Croissant" style="width:100%">
+      <h3>Monster Abra A5</h3>
+      <a href="sepet"><button class="w3-button w3-black">19.599₺ <i class="fa fa-shopping-cart"></i></button></a>
+      <a href="pc8" class="w3-button w3-black">İncele</a>
+    </div>
+  </div>
+
+
+ 
+</div>
+
+
+
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

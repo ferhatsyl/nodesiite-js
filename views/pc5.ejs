@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bilgisayar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body class="w3-content w3-border-left w3-border-right" style="background-image: url(/img/foto1.jpg)">
+
+
+
+<!-- Top menu on small screens -->
+
+
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <div style="text-align:right" class="w3-text-black" > <a href="index" onclick="w3_close()"
+      class="w3-bar-item w3-button"><h2>Ana Sayfa</h2></a></div>
+   
+    
+    <h2 class="w3-text-black">Lenovo ThinkPad</h2>
+    <div class="w3-display-container mySlides" style="text-align:center">
+    <img src="/img/l-pc-2.png" style="width:50%">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Lenovo ThinkPad</p>
+      </div>
+    </div>
+    
+  
+
+  <div class="w3-container">
+    <h4><strong>Nerede olursanız olun, rüya gibi bir performans</strong></h4>
+    <h4><strong></strong></h4>
+    <p>Gücünü 11. Nesil Intel® Core™ i5 vPro® işlemci ve 16 GB'a kadar bellekten alan ThinkPad, her şeyin üstesinden kolaylıkla gelir. Hareket halindeyken ihtiyacınız olan performans ve yanıt hızı göz önünde bulundurularak tasarlanan bu 13" dizüstü bilgisayardaki iki adet USB-C Thunderbolt™ 4 bağlantı noktası sayesinde ışık hızında veri aktarımlarının ve birden çok yüksek çözünürlüklü ekran kullanabilmenin sunduğu esnekliğin keyfini çıkarabilirsiniz.</p>
+      
+    </div>
+    <hr>
+    <hr>
+    
+    <h4><strong>Teknik Özellikler</strong></h4>
+    <p>Ekran Çözünürlüğü (Piksel): 1920 x 1080</p>
+    <p>İşlemci: i5-1135G7</p>
+    <p>Disk Türü: SSD</p>
+    <p>İşletim Sistemi Yazılımı: Windows</p>
+    <p>Ram: 16 GB</p>
+    <p>Ekran Kartı Modeli: Intel UHD Graphics</p>      
+    
+    <hr>
+  </div>
+  <hr>
+  
+  <!-- Contact -->
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Subscribe Modal -->
+
+<script>
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

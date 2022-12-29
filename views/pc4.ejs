@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bilgisayar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body class="w3-content w3-border-left w3-border-right" style="background-image: url(/img/foto1.jpg)">
+
+
+
+<!-- Top menu on small screens -->
+
+
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <div style="text-align:right" class="w3-text-black" > <a href="index" onclick="w3_close()"
+      class="w3-bar-item w3-button"><h2>Ana Sayfa</h2></a></div>
+   
+    
+    <h2 class="w3-text-black">Asus VivoBook Pro</h2>
+    <div class="w3-display-container mySlides" style="text-align:center">
+    <img src="/img/a-pc-2.png" style="width:50%">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Asus VivoBook Pro</p>
+      </div>
+    </div>
+    
+  
+
+  <div class="w3-container">
+    <h4><strong>Geleceği şekillendir</strong></h4>
+    <h4><strong></strong></h4>
+    <p>Yeni nesil yaratıcılık için nihai güç merkezi olan Vivobook Pro ile geleceği şekillendirin. Vivobook Pro, 16 inçlik NanoEdge 4K OLED1 ekran, AMD Ryzen™ 7 5900HX işlemci ve vizyonunuzu gerçekleştirmek için ihtiyaç duyduğunuz hızı ve doğruluğu size sunar. NVIDIA® GeForce GTX™ 1650 Ti grafik kartı. Özel DialPad, yaratıcı araçlarınızın hassas ve sezgisel kontrolünü sağlar ve çift fanlı soğutma tasarımı, kesintisiz bir huzur içinde çalışmanıza olanak tanır. Vivobook Pro, yaratıcı geleceğinizin kapısını açar.</p>
+      
+    </div>
+    <hr>
+    <hr>
+    
+    <h4><strong>Teknik Özellikler</strong></h4>
+    <p>Ekran Çözünürlüğü (Piksel): 1920 x 1080</p>
+    <p>İşlemci: AMD Ryzen 7</p>
+    <p>Disk Türü: SSD</p>
+    <p>İşletim Sistemi Yazılımı: Windows</p>
+    <p>Ram: 16 GB</p>
+    <p>Ekran Kartı Modeli: GTX 1650 Tİ</p>      
+    
+    <hr>
+  </div>
+  <hr>
+  
+  <!-- Contact -->
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Subscribe Modal -->
+
+<script>
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

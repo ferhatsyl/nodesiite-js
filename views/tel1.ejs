@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Telefon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body class="w3-content w3-border-left w3-border-right" style="background-image: url(/img/foto1.jpg)">
+
+
+
+<!-- Top menu on small screens -->
+
+
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <div style="text-align:right" class="w3-text-black" > <a href="index" onclick="w3_close()"
+      class="w3-bar-item w3-button"><h2>Ana Sayfa</h2></a></div>
+   
+    
+    <h2 class="w3-text-black">İPHONE 12</h2>
+    <div class="w3-display-container mySlides" style="text-align:center">
+    <img src="/img/i-12.png" style="width:50%">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>İPHONE 12</p>
+      </div>
+    </div>
+    
+  
+
+  <div class="w3-container">
+    <h4><strong>Çevreyle ilgili hedeflerimiz</strong></h4>
+    <h4><strong></strong></h4>
+    <p>iPhone 12, 2030 yılında tamamen karbon nötr olma hedefimize ulaşma çabalarımızın bir parçası olarak, güç adaptörü veya EarPods ile sunulmuyor. Kutunun içinde, USB-C güç adaptörleri ve bilgisayar bağlantı noktalarıyla uyumlu, hızlı şarj özelliğini destekleyen bir USB-C - Lightning Kablosu bulunuyor.
+
+        Bu iPhone modeliyle uyumlu olan mevcut USB-A - Lightning kablolarınızı, güç adaptörlerinizi ve kulaklıklarınızı kullanmaya devam edebilirsiniz. Yeni bir Apple güç adaptörüne veya kulaklığa ihtiyacınız varsa bu aksesuarları satın alabilirsiniz.</p>
+      
+    </div>
+    <hr>
+    <hr>
+    
+    <h4><strong>Teknik Özellikler</strong></h4>
+    <p> 🆘 Acil SOS Trafik Kazası Algılama </p>
+    <p>Gelişmiş çift kamera sistemi 12 MP Ana Kamera </p>
+    <p>26 saate kadar video oynatma dipnot³</p>
+    <p>A15 Bionic çip 5 çekirdekli GPU’ya sahip</p>
+    <p>Face ID</p>
+    <p>5G özellikli dipnot</p>      
+    
+    <hr>
+  </div>
+  <hr>
+  
+  <!-- Contact -->
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Subscribe Modal -->
+
+<script>
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

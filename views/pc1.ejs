@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bilgisayar</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body class="w3-content w3-border-left w3-border-right" style="background-image: url(/img/foto1.jpg)">
+
+
+
+<!-- Top menu on small screens -->
+
+
+  <!-- Slideshow Header -->
+  <div class="w3-container" id="apartment">
+    <div style="text-align:right" class="w3-text-black" > <a href="index" onclick="w3_close()"
+      class="w3-bar-item w3-button"><h2>Ana Sayfa</h2></a></div>
+   
+    
+    <h2 class="w3-text-black">Apple MacBook Pro M1</h2>
+    <div class="w3-display-container mySlides" style="text-align:center">
+    <img src="/img/mac-1.png" style="width:50%">
+      <div class="w3-display-bottomleft w3-container w3-black">
+        <p>Apple MacBook Pro M1</p>
+      </div>
+    </div>
+    
+  
+
+  <div class="w3-container">
+    <h4><strong>Süper güçlü M1 çip ile.</strong></h4>
+    <h4><strong></strong></h4>
+    <p>13 inç MacBook Pro, yeni M1 çip sayesinde şimdi daha da becerikli. Aynı kompakt tasarımda 20 saate kadar pil ömrü1 ve
+        üst düzey performansın sürekliliğini sağlayan aktif soğutma
+        sistemi. Göz alıcı Retina ekran, stüdyo kalitesinde mikrofonlar
+        ve FaceTime HD kamera gibi muhteşem özellikler.
+        Karşınızda en kolay taşınabilen profesyonel laptopumuz.</p>
+      
+    </div>
+    <hr>
+    <hr>
+    
+    <h4><strong>Teknik Özellikler</strong></h4>
+    <p>Ekran Çözünürlüğü (Piksel): 3024 x 1964</p>
+    <p>İşlemci: M1 Pro</p>
+    <p>Disk Türü: SSD</p>
+    <p>İşletim Sistemi Yazılımı: macOS Monterey</p>
+    <p>Ram: 16</p>
+    <p>Ekran Kartı Modeli: Apple GPU</p>      
+    
+    <hr>
+  </div>
+  <hr>
+  
+  <!-- Contact -->
+  
+
+<!-- End page content -->
+</div>
+
+<!-- Subscribe Modal -->
+
+<script>
+// Script to open and close sidebar when on tablets and phones
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Slideshow Apartment Images
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-opacity-off";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customers</title>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-image:url('/img/foto1.jpg');">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/index">Atom Bilgisayar</a>
+          </div>
+          <div>
+    <a href="/index" class="btn btn-outline-primary">Ana Sayfa</a>  
+    <a href="/products/add" class="btn btn-outline-danger">Yeni Ürün</a> 
+    <a href="/products" class="btn btn-outline-warning">Ürün listesi</a>
+      </nav>   
+ 
+
+
+<!--   <% if (messages.error) { %>
+<p style="color:red"><%- messages.error %></p>
+<% } %> -->
+<% if (messages.success) { %>
+<p class="alert alert-success mt-4"><%- messages.success %></p>
+<% } %> 
+<br>
+<table class="table table-bordered" style="font-size: large;">  
+<thead class="thead-dark">
+<tr>
+<th scope="col">#</th>
+<th scope="col">ürün adı</th>
+<th scope="col">fiyat</th>
+<th scope="col">resim adı</th>
+<th width="200px">Düzenle/Sil</th>
+</tr>
+</thead>
+<tbody>
+<% if(data.length){
+for(var i = 0; i< data.length; i++) {%>  
+<tr>
+<th scope="row"><%= (i+1) %></th>
+<td><%= data[i].name%></td>
+<td><%= data[i].price%></td>
+<td><%= data[i].imageUrl%></td>
+<td>
+ 
+   
+    <img src="/img/<%= data[i].imageUrl %>" alt="" class="img-fluid">
+<a class="btn btn-success edit" href="../products/edit/<%=data[i].id%>">Düzenle</a>                       
+<a class="btn btn-danger delete" onclick="return alert('Are You sure?')" href="../products/delete/<%=data[i].id%>">Sil</a> 
+          
+</td>
+</tr>
+<% }
+}else{ %>
+<tr>
+<td colspan="3">Kullanıcı Yok</td>
+</tr>
+<% } %>    
+</tbody>
+</table>
+</body>
+</html>
